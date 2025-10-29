@@ -22,6 +22,18 @@
     }
   }
 
+
+  if($_SERVER["REQUEST_METHOD"] == "GET"){
+    if(isset($_GET["acao"])){
+      if($_GET["acao"] == "remover"){
+        $sql = "DELETE FROM Comments WHERE id = ".$_GET["id"].";";
+        if(!mysqli_query($conn,$sql)){
+        die("Erro ao criar comentário". mysqli_error($conn));
+      }
+      }
+    }
+  }
+
   $sql = "SELECT * FROM Comments";
   $comments = mysqli_query($conn,$sql);
   if(!$comments){
@@ -62,8 +74,7 @@
           <div class="comment" id="comment_<?php echo $comment['id']?>">
             <h4>De: <?php echo $comment['name']?></h4>
             <p><?php echo $comment['comment']?></p>
-          </div>
-
+            <a onclick="return(confirm('Tem certeza?'));" href="article.php?acao=remover&id=<?php echo $comment['id']?>">Remover</a>
         <?php endwhile; ?>
 
       <?php else: ?>
