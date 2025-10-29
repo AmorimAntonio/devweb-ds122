@@ -1,0 +1,25 @@
+#titulo {
+  margin-bottom: 20px;
+  text-align: center;
+  border: 2px solid black; 
+  border-radius: 8px;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+#valores {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  gap: 10px; 
+}
+
+
+#b {
+  text-align: center;
+}
+
+#resultado{
+    text-align: center;
+}

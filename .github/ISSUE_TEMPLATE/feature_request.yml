@@ -1,0 +1,43 @@
+name: "✨ Solicitar Nova Funcionalidade"
+description: "Sugira uma melhoria ou funcionalidade nova"
+title: "[FEATURE] <descrição curta>"
+labels: ["feature", "enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: "### Obrigado pela ideia! Vamos entender melhor sua proposta."
+
+  - type: textarea
+    id: contexto
+    attributes:
+      label: "Contexto"
+      description: "Qual problema você quer resolver?"
+      placeholder: "Explique o motivo da ideia."
+
+  - type: textarea
+    id: proposta
+    attributes:
+      label: "Solução proposta"
+      description: "Como você imagina que essa funcionalidade funcionaria?"
+      placeholder: "Descreva a solução."
+
+  - type: textarea
+    id: alternativas
+    attributes:
+      label: "Alternativas consideradas"
+      description: "Há outras formas de resolver o mesmo problema?"
+      placeholder: "Liste opções alternativas."
+
+  - type: input
+    id: impacto
+    attributes:
+      label: "Impacto esperado"
+      description: "Que benefício isso traria ao projeto?"
+      placeholder: "Ex: Melhora a experiência do usuário em ..."
+
+  - type: checkboxes
+    id: confirmação
+    attributes:
+      label: "Checklist"
+      options:
+        - label: "Verifiquei se já existe uma issue semelhante"
