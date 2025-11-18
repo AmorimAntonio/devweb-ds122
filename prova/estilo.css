@@ -1,0 +1,13 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: rgb(163, 56, 48);
+    color: rgb(235, 234, 223);
+}
+
+table, td, tr, th{
+    border: 2px solid rgb(164, 184, 8);
+    border-collapse: collapse;
+    padding: 10px;
+    margin: auto;
+}
